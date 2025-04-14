@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started - TeddyTech</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">TeddyTech</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="jobs.html">Jobs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="onboarding-hero">
+        <div class="container">
+            <h1>Let's Get Started</h1>
+            <p class="subheading">Complete this quick form and we'll tailor our services to your needs</p>
+        </div>
+    </section>
+
+    <section class="onboarding-steps">
+        <div class="container">
+            <div class="steps-indicator">
+                <div class="step active">
+                    <span>1</span>
+                    <p>Service Selection</p>
+                </div>
+                <div class="step">
+                    <span>2</span>
+                    <p>Contact Details</p>
+                </div>
+                <div class="step">
+                    <span>3</span>
+                    <p>Confirmation</p>
+                </div>
+            </div>
+
+            <form id="onboardingForm" class="onboarding-form">
+                <!-- Step 1: Service Selection -->
+                <div class="form-step active" data-step="1">
+                    <h2>What service are you interested in?</h2>
+                    <div class="service-options">
+                        <label class="service-option">
+                            <input type="radio" name="service" value="ict-training" required>
+                            <div class="option-card">
+                                <i class="fas fa-laptop-code"></i>
+                                <h3>ICT Training</h3>
+                                <p>Skills development programs</p>
+                            </div>
+                        </label>
+                        
+                        <label class="service-option">
+                            <input type="radio" name="service" value="remote-support">
+                            <div class="option-card">
+                                <i class="fas fa-headset"></i>
+                                <h3>Remote Support</h3>
+                                <p>Technical assistance</p>
+                            </div>
+                        </label>
+                        
+                        <label class="service-option">
+                            <input type="radio" name="service" value="school-portal">
+                            <div class="option-card">
+                                <i class="fas fa-school"></i>
+                                <h3>School Portal</h3>
+                                <p>Custom LMS development</p>
+                            </div>
+                        </label>
+                        
+                        <label class="service-option">
+                            <input type="radio" name="service" value="consultancy">
+                            <div class="option-card">
+                                <i class="fas fa-briefcase"></i>
+                                <h3>Consultancy</h3>
+                                <p>Tech strategy guidance</p>
+                            </div>
+                        </label>
+                    </div>
+                    <button type="button" class="btn primary next-step">Continue</button>
+                </div>
+
+                <!-- Step 2: Contact Details -->
+                <div class="form-step" data-step="2">
+                    <h2>Tell us about yourself</h2>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Full Name*</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="organization">Organization</label>
+                            <input type="text" id="organization" name="organization">
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="message">Additional Details</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn secondary prev-step">Back</button>
+                        <button type="submit" class="btn primary">Submit Request</button>
+                    </div>
+                </div>
+
+                <!-- Step 3: Confirmation -->
+                <div class="form-step" data-step="3">
+                    <div class="confirmation-message">
+                        <i class="fas fa-check-circle"></i>
+                        <h2>Thank You!</h2>
+                        <p>We've received your request and will contact you within 24 hours.</p>
+                        <p>In the meantime, check out our <a href="services.html">services page</a> for more details.</p>
+                        <a href="index.html" class="btn primary">Return Home</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="onboarding-benefits">
+        <div class="container">
+            <h2>Why Choose TeddyTech?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Fast Response</h3>
+                    <p>We guarantee a response within 1 business day</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Certified Experts</h3>
+                    <p>All our consultants are vetted professionals</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <h3>Personalized Service</h3>
+                    <p>Solutions tailored to your specific needs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="./scripts.js"></script>
+    <script>
+        // Multi-step form functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('onboardingForm');
+            const steps = document.querySelectorAll('.form-step');
+            const stepIndicators = document.querySelectorAll('.steps-indicator .step');
+            let currentStep = 0;
+
+            // Next button click handler
+            document.querySelectorAll('.next-step').forEach(button => {
+                button.addEventListener('click', function() {
+                    if (validateStep(currentStep)) {
+                        goToStep(currentStep + 1);
+                    }
+                });
+            });
+
+            // Previous button click handler
+            document.querySelectorAll('.prev-step').forEach(button => {
+                button.addEventListener('click', function() {
+                    goToStep(currentStep - 1);
+                });
+            });
+
+            // Form submission
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                if (validateStep(currentStep)) {
+                    goToStep(currentStep + 1);
+                    // In a real implementation, you would send the form data to your backend here
+                    console.log('Form submitted:', {
+                        service: form.querySelector('input[name="service"]:checked').value,
+                        name: form.querySelector('#name').value,
+                        email: form.querySelector('#email').value,
+                        phone: form.querySelector('#phone').value,
+                        organization: form.querySelector('#organization').value,
+                        message: form.querySelector('#message').value
+                    });
+                }
+            });
+
+            function goToStep(step) {
+                steps[currentStep].classList.remove('active');
+                stepIndicators[currentStep].classList.remove('active');
+                
+                currentStep = step;
+                
+                steps[currentStep].classList.add('active');
+                stepIndicators[currentStep].classList.add('active');
+            }
+
+            function validateStep(step) {
+                if (step === 0) {
+                    const selectedService = form.querySelector('input[name="service"]:checked');
+                    if (!selectedService) {
+                        alert('Please select a service');
+                        return false;
+                    }
+                } else if (step === 1) {
+                    if (!form.querySelector('#name').value || !form.querySelector('#email').value) {
+                        alert('Please fill in all required fields');
+                        return false;
+                    }
+                }
+                return true;
+            }
+        });
+    </script>
+</body>
+</html>
